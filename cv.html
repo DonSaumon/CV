@@ -22,10 +22,16 @@
                 font-weight: bold;
                 color: #168ddb;
             }
-            h1 .sub {
+            h1 .position {
                 display: block;
                 font-size: 19px;
-                color: black;
+                color: #b5371b;
+            }
+            h1 .summary {
+                display: block;
+                font-size: 14px;
+                color: grey;
+                padding-top: 5px;
             }
 
             h2 {
@@ -53,9 +59,13 @@
             }
 
             .sidebar {
-                width: 20%;
-                border-right: solid 1px black;
+                width: 10%;
                 padding-right: 17px;
+                background-color: #60aadb;
+            }
+            .sidebar h3 {
+                font-weight: bold;
+                color: #b5371b;
             }
             ul li {
                 padding: 2px 0;
@@ -63,10 +73,10 @@
 
             .main {
                 width: 75%;
-                padding-left: 30px; 
+                padding-left: 30px;
             }
             .main .header {
-                margin-bottom: 30px; 
+                margin-bottom: 30px;
             }
             .bloc ul {
                 margin: 5px 0px 0px 0px;
@@ -100,13 +110,16 @@
                 padding: 0;
                 width: 30%;
             }
+            .section {
+                page-break-after: auto;
+            }
 
             .section-experiences h3,.section-projets h3,.section-formations h3 {
                 margin-bottom: 0;
             }
 
-            .section-experiences {
-                page-break-after: always;
+            .section-competences .content li.important {
+                font-weight: bold;
             }
         </style>
     </head>
@@ -128,7 +141,7 @@
                             <h3>Infos</h3>
                             <div class="content">
                                 <ul>
-                                    <li>Permis B</li>
+                                    <li>Permis A2, B</li>
                                     <li>Anglais (Intermédiaire)</li>
                                     <li>Japonais (Notions)</li>
                                 </ul>
@@ -139,10 +152,10 @@
                             <div class="content">
                                 <ul>
                                     <li>Japon/Culture japonaise (voyage de Mars à Mai 2016)</li>
-                                    <li>Jeux vidéos (RPG, Plate-forme, Combat)</li>
-                                    <li>Littérature (fantasie, aventure) (romans, mangas, BD)</li>
-                                    <li>Sport<br>Natation : 8 ans (compétitions)<br>Escalade<br>Boxe anglaise<br>Course à pied</li>
-                                    <li>Veille technologique</li>
+                                    <li>Jeux vidéos (RPG, Plate-forme, Combat, Aventure, Action)</li>
+                                    <li>Littérature (fantasie, aventure) (romans, mangas, BDs)</li>
+                                    <li>Sport<br>Natation : 8 ans (compétitions)<br>Escalade<br>Course à pied</li>
+                                    <li>Moto</li>
                                 </ul>
                             </div>
                         </div>
@@ -152,7 +165,8 @@
                         <div class="header">
                             <h1>
                                 Mathieu Hay
-                                <span class="sub">Développeur PHP</span>
+                                <span class="position">Développeur Back End</span>
+                                <span class="summary">Développeur Web depuis plus de 5 ans, je suis principalement orienté Back End avec PHP. Je suis à la recherche d'un poste de développeur Back End.</span>
                             </h1>
                         </div>
                         <div class="body">
@@ -168,50 +182,12 @@
                                                             <h3>Programmation Web</h3>
                                                             <div class="content">
                                                                 <ul>
-                                                                    <li>PHP (5/7) (Avancé)</li>
+                                                                    <li class="important">PHP (5/7/8) (Avancé)</li>
                                                                     <li>jQuery (Intermédiaire)</li>
                                                                     <li>JavaScript (Intermédiaire)</li>
+                                                                    <li>Symfony (2/3) (Débutant)</li>
                                                                     <li>HTML5 (Débutant)</li>
                                                                     <li>CSS3 (Débutant)</li>
-                                                                    <li>Symfony (2/3) (Débutant)</li>
-                                                                </ul>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="bloc">
-                                                            <h3>Programmation</h3>
-                                                            <div class="content">
-                                                                <ul>
-                                                                    <li>Java (Intermédiaire)</li>
-                                                                    <li>Android (Débutant)</li>
-                                                                </ul>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                            <td class="bloc">
-                                                <table>
-                                                    <tr>
-                                                        <td class="bloc">
-                                                            <h3>Base de données</h3>
-                                                            <div class="content">
-                                                                <ul>
-                                                                    <li>MySql (Débutant)</li>
-                                                                    <li>MongoDB (Notions)</li>
-                                                                    <li>PostgreSQL (Notions)</li>
-                                                                </ul>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="bloc">
-                                                            <h3>Gestion de versions</h3>
-                                                            <div class="content">
-                                                                <ul>
-                                                                    <li>Git (Débutant)</li>
-                                                                    <li>Subversion (Débutant)</li>
                                                                 </ul>
                                                             </div>
                                                         </td>
@@ -222,6 +198,42 @@
                                                             <div class="content">
                                                                 <ul>
                                                                     <li>Agile Scrum (Débutant)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="bloc">
+                                                <table>
+                                                    <tr>
+                                                        <td class="bloc">
+                                                            <h3>Gestion de versions</h3>
+                                                            <div class="content">
+                                                                <ul>
+                                                                    <li class="important">Git (Débutant)</li>
+                                                                    <li>Subversion (Débutant)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bloc">
+                                                            <h3>Base de données</h3>
+                                                            <div class="content">
+                                                                <ul>
+                                                                    <li class="important">MySql (Débutant)</li>
+                                                                    <li>PostgreSQL (Notions)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bloc">
+                                                            <h3>Autres</h3>
+                                                            <div class="content">
+                                                                <ul>
+                                                                    <li>Docker (Notions)</li>
                                                                 </ul>
                                                             </div>
                                                         </td>
@@ -239,7 +251,7 @@
                                     <div class="bloc">
                                         <h3>
                                             <span class="date">Depuis Janvier 2018</span>
-                                            : Développeur Web    
+                                            : Développeur Web
                                         </h3>
                                         <div class="content">
                                             <div class="infos">
@@ -248,7 +260,7 @@
                                             <div class="description">
                                                 <b>Maintenance évolutive et corrective pour un CMS à l'aide d'un framework maison permettant notamment de créer des sites d'inscription et des back-office de gestion d'événements</b>
                                                 <br>
-                                                (PHP5.6, jQuery, JavaScript, HTML, PHPStorm, Git, Subversion, Docker)
+                                                (PHP5.6, jQuery, JavaScript, HTML, PHPStorm, Git, Subversion, Docker, Agile Scrum)
                                                 <ul>
                                                     <li>Réalisation de plusieurs SSO</li>
                                                     <li>Implémentation de signature électronique</li>
@@ -273,7 +285,7 @@
                                                 <br>
                                                 <b>Réalisation d'un site vitrine permettant de présenter les projets du centre</b>
                                                 <br>
-                                                (Javascript, AngularJS, Node.js, ExpressJS, MongoDB, HTML5, CSS3, Bootstrap 3, NPM, Bower, Git, SourceTree, Trello)
+                                                (AngularJS, Node.js, ExpressJS, MongoDB, HTML5, CSS3, Bootstrap 3, Git, Trello)
                                                 <ul>
                                                     <li>Montée en compétences sur AngularJS, Node.js, ExpressJS et MongoDB</li>
                                                 </ul>
@@ -284,7 +296,7 @@
                                                 <br>
                                                 <b>Maintenance évolutive et corrective d'un CRM propriétaire pour un géant de la distribution française (fidélisation, couponing)</b>
                                                 <br>
-                                                (PHP5.3, HTML3, CSS3, Javascript, PostgreSQL, Subversion, Agile Scrum, Jira)
+                                                (PHP5.3, Javascript, HTML3, CSS3, PostgreSQL, Subversion, Agile Scrum)
                                             </div>
                                         </div>
                                     </div>
@@ -321,30 +333,9 @@
                                             </div>
                                             <div class="description">
                                                 <b>Permet de créer des fiches de révision à double sens et de les réviser</b>
-                                                <br>
-                                                (Java, Android, Git)
                                                 <ul>
                                                     <li>Montée en compétence sur Java et Android</li>
                                                     <li>https://github.com/DonSaumon/RevisionCards2</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="bloc">
-                                        <h3>
-                                            CV en version HTML
-                                        </h3>
-                                        <div class="content">
-                                            <div class="infos">
-                                                <span class="date">2017</span>
-                                            </div>
-                                            <div class="description">
-                                                <b>Réalisation d'un CV en version HTML</b>
-                                                <br>
-                                                (HTML, CSS)
-                                                <ul>
-                                                    <li>https://github.com/DonSaumon/CV</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -364,9 +355,6 @@
                                             <div class="infos">
                                                 IUT &bull; Orléans (45)
                                             </div>
-                                            <div class="description">
-                                                DUT en 1 an
-                                            </div>
                                         </div>
                                     </div>
 
@@ -378,9 +366,6 @@
                                         <div class="content">
                                             <div class="infos">
                                                 IUT &bull; Tours (37)
-                                            </div>
-                                            <div class="description">
-                                                Génie Électrique et Informatique Industrielle
                                             </div>
                                         </div>
                                     </div>
