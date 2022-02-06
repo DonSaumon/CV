@@ -22,8 +22,13 @@
                 font-weight: bold;
                 color: #168ddb;
             }
+            h1 .name {
+                display: block;
+                text-align: center;
+            }
             h1 .position {
                 display: block;
+                text-align: center;
                 font-size: 19px;
                 color: #b5371b;
             }
@@ -43,8 +48,9 @@
 
             h3 {
                 margin: 15px 0 5px 0;
-                font-size: 16px;
+                font-size: 14px;
                 color: #168ddb;
+                font-weight: bold;
             }
 
             ul {
@@ -58,8 +64,13 @@
                 margin: 5px 0 0 0;
             }
 
+            .header {
+                margin-bottom: 30px;
+            }
+
             .sidebar {
                 width: 10%;
+                border-radius: 10px;
                 padding-right: 17px;
                 background-color: #60aadb;
             }
@@ -67,6 +78,26 @@
                 font-weight: bold;
                 color: #b5371b;
             }
+            .sidebar .mail, .sidebar .phone {
+                font-weight: bold;
+            }
+            .sidebar .bloc {
+                margin-bottom: 40px;
+            }
+            .sidebar .bloc h3 {
+                text-align: center;
+            }
+            .sidebar .content ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            .sidebar .content li {
+                margin-bottom: 5px;
+            }
+            .sidebar .bloc-hobbies li {
+                margin-bottom: 20px;
+            }
+
             ul li {
                 padding: 2px 0;
             }
@@ -74,9 +105,6 @@
             .main {
                 width: 75%;
                 padding-left: 30px;
-            }
-            .main .header {
-                margin-bottom: 30px;
             }
             .bloc ul {
                 margin: 5px 0px 0px 0px;
@@ -118,13 +146,21 @@
                 margin-bottom: 0;
             }
 
-            .section-competences .content li.important {
+            .important {
                 font-weight: bold;
             }
         </style>
     </head>
     <body>
         <div class="page">
+            <div class="header">
+                <h1>
+                    <span class="name">Mathieu Hay</span>
+                    <span class="position">Développeur Back End</span>
+                    <span class="summary">Développeur Web depuis plus de 5 ans, je suis principalement orienté Back End avec PHP. Je suis à la recherche d'un poste de développeur Back End.</span>
+                </h1>
+            </div>
+
             <table>
                 <tr>
                     <td class="sidebar">
@@ -138,37 +174,31 @@
                             </div>
                         </div>
                         <div class="bloc">
-                            <h3>Infos</h3>
+                            <h3>Informations</h3>
                             <div class="content">
                                 <ul>
-                                    <li>Permis A2, B</li>
-                                    <li>Anglais (Intermédiaire)</li>
-                                    <li>Japonais (Notions)</li>
+                                    <li>Permis : A2, B</li>
+                                    <li>Anglais : Intermédiaire</li>
+                                    <li>Japonais : Notions</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="bloc">
+                        <div class="bloc bloc-hobbies">
                             <h3>Centres d'intérêt</h3>
                             <div class="content">
                                 <ul>
-                                    <li>Japon/Culture japonaise (voyage de Mars à Mai 2016)</li>
-                                    <li>Jeux vidéos (RPG, Plate-forme, Combat, Aventure, Action)</li>
-                                    <li>Littérature (fantasie, aventure) (romans, mangas, BDs)</li>
-                                    <li>Sport<br>Natation : 8 ans (compétitions)<br>Escalade<br>Course à pied</li>
-                                    <li>Moto</li>
+                                    <li><span class="important">Japon/Culture japonaise :</span><br>Voyage de Mars à Mai 2016</li>
+                                    <li><span class="important">Jeux vidéos :</span><br>RPG, Plate-forme, Combat, Aventure, Action</li>
+                                    <li class="important">Moto</li>
+                                    <li><span class="important">Littérature :</span><br>Fantasy, aventure<br>Romans, mangas, BDs</li>
+                                    <li><span class="important">Cinéma :</span><br>Fantasy, aventure, action, comédie, science-fiction</li>
+                                    <li><span class="important">Sports :</span><br>Natation : 8 ans (compétitions)<br>Escalade<br>Course à pied</li>
                                 </ul>
                             </div>
                         </div>
                     </td>
 
                     <td class="main">
-                        <div class="header">
-                            <h1>
-                                Mathieu Hay
-                                <span class="position">Développeur Back End</span>
-                                <span class="summary">Développeur Web depuis plus de 5 ans, je suis principalement orienté Back End avec PHP. Je suis à la recherche d'un poste de développeur Back End.</span>
-                            </h1>
-                        </div>
                         <div class="body">
                             <div class="section section-competences">
                                 <h2>🛠️ Compétences</h2>
